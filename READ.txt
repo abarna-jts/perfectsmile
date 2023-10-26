@@ -1,0 +1,47 @@
+<?php
+  
+    session_start();
+
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD']=="POST")
+    {
+        $gmail=$_POST['mail'];
+        $password=$_POST['pass'];
+
+        if(!empty($gmail) && !empty($password) && !is_numeric($gmail))
+        {
+
+            $query = "insert into form (email, pass) values('$gmail','$password')";
+
+           $login=mysqli_query($con,$query);
+
+            echo "<script type='text/javascript'> alert('Successfully Logged-in')</script>";
+        }
+      }
+      else{
+        header('location: index.php');
+      }
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form>
+            <label>Email</label>
+            <input type="email" name="mail" required>
+            <label>Password</label>
+            <input type="password" name="pass" required>
+            <input type="submit" name="sub_btn" value="Submit">
+        </form>
+        <p>Not have a account? <a href="signup.php">Sign Up here</a></p>
+    </div>
+</body>
+</html>

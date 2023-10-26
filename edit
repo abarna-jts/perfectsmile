@@ -1,0 +1,165 @@
+<nav class="navbar">
+            
+            <a href="./index.php">Home</a>
+            <a href="./aboutus.php">About us</a>
+            <a href="./our.services.php">Services</a>
+            <a href="./booknow.php">Appointments</a>
+            <a href="./membership.php">Membership plan</a>
+            <a href="./cr.php">Career</a>
+            <a href="./login.php">Login</a>
+            <!-- <a href="./Account.php" class="scroll">Account -->
+                <!-- <p> Welcome
+                    <div class="menu">
+                    <?php echo $_SESSION['email'];?>
+                    </div> -->
+                <!-- </p> -->
+            <!-- </a> -->
+            <a href="./logout.php">Logout</a>   
+        </nav>
+
+        <!-- HTML !-->
+
+  
+  <form action="index.php" method="post">
+    <h3>Book Appointment</h3>
+    <input type="text" placeholder="your name" class="box">
+    <input type="number" placeholder="your number" class="box">
+    <input type="email" placeholder="your email" class="box">
+    <input type="date" class="box">
+    <input type="submit" placeholder="book now" class="btn">
+</form>
+
+
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let number= document.getElementById("number");
+            let course = document.getElementById("course");
+            let joining_date = document.getElementById("joining_date");
+            
+            name.addEventListener('input', function () {
+          // Get the value of the input
+          var x = name.value;
+          var text;
+          
+          // Define the minimum and maximum allowed length
+          var minLength = 3;
+          var maxLength = 30;
+    
+          // Check the length of the input value
+          if (x.length < minLength || x.length > maxLength) {
+              // Display an error message
+              text="Input must be more that 3 characters";
+              document.getElementById("name-message").innerHTML = '<p class="error-message">' + text + '</p>';
+          } else {
+              // Clear the error message if the length is valid
+              text= "valid input";
+              document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+          }
+        
+          
+      });
+      id.addEventListener('input',function(){
+    var y = id.value;
+    var minid = 10;
+    var maxid = 15;
+    var text;
+
+    if (y.length < minid || y.length > maxid) {
+        text = "Input must be more than 10 numbers";
+        document.getElementById("id-message").innerHTML = '<p class="error-message">' + text + '</p>';
+       
+    } else {
+        text = "Valid input";
+        document.getElementById("id-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+        
+    }
+
+    
+});
+
+      email.addEventListener('input',function(){
+        var z=email.value;
+        var text;
+
+        if (!z.includes('@')) {
+            text = "Email must contain '@' symbol";
+            document.getElementById("e-message").innerHTML = '<p class="error-message">' + text + '</p>';
+    } else {
+        text = "Valid email";
+        document.getElementById("e-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+    }
+    
+      });
+      joining_date.addEventListener('focus', function() {
+    var currentDate = new Date();
+    var today = currentDate.toISOString().split('T')[0];
+    this.setAttribute('min', today);
+});
+
+
+<div class="owl-nav">
+    <button type="button" role="presentation" class="owl-prev">
+        <i class="flaticon-left-chevron"></i>
+    </button>
+    <button type="button" role="presentation" class="owl-next">
+        <i class="flaticon-next"></i>
+    </button>
+</div>
+<div class="owl-dots">
+    <button role="button" class="owl-dot active">
+        <span></span>
+    </button>
+    <button role="button" class="owl-dot">
+        <span></span>
+    </button>
+</div>
+
+<script>
+let currentIndex = 0;
+        const contents = document.querySelectorAll('.content');
+        const dots = document.querySelectorAll('.dot');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function showContent(index) {
+            contents.forEach((content, i) => {
+                content.style.display = i === index ? 'block' : 'none';
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Initialize the carousel with the first item shown
+        showContent(currentIndex);
+
+        // Function to handle next and previous button clicks
+        function handleNext() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            showContent(currentIndex);
+        }
+
+        function handlePrev() {
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            showContent(currentIndex);
+        }
+
+        // Add event listeners to the buttons
+        nextButton.addEventListener('click', handleNext);
+        prevButton.addEventListener('click', handlePrev);
+
+        // Add event listeners to the dots
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                showContent(i);
+                currentIndex = i;
+            });
+        });
+    </script>
+
+<label for="resume">Upload a Resume <span class="required">*</span></label><br>
+<br>
+<label for="file" id="file">Choose a file:</label>
+            <input type="file" name="file" id="file" accept=".pdf, .doc, .docx">
+            <br>

@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);    
+}
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--green);
+}
+.button {
+    display: inline-block;
+    padding: 2px 15px 2px; /* Adjust padding as needed */
+    background-color: #a9b5c2; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #19eec3; /* Change the background color on hover */
+}
+.button1 {
+    display: inline-block;
+    padding: 2px 15px 2px; /* Adjust padding as needed */
+    background-color: #a9b5c2; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover {
+    background-color: #f21909; /* Change the background color on hover */
+}
+
+.arrow-left,
+.long-arrow-left{
+  display: block;
+  position:fixed;
+  margin-top:-1rem;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #090909;
+  border-left: 2px solid #090909;
+}
+.arrow-left,
+.long-arrow-left{
+ transform: rotate(-45deg);
+}
+.long-arrow-left::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: #090909;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
+.logo{
+    justify-content:flex-start
+}
+
+.header{
+    padding: 2rem;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background: #fff;    
+}
+
+
+.header .logo{
+    font-size: 2.8rem;
+    color: var(--black);    
+    text-align: left;
+    margin-right:5.5rem;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header .logo i{
+    color: var(--green);    
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2.5rem;
+    transition: transform 0.3s; 
+    
+}
+.header .navbar ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+
+.header .navbar a:hover{       
+    color: var(--black);
+    transform: scale(1.1); 
+  
+}
+.header .scroll a:hover .menu{
+    display: block;
+    position:absolute;
+    background: #eee;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding-top: 6rem;
+}
+
+.home .image{
+    flex:1 1 45rem;    
+}
+
+.home .image img{
+    width: 55%;
+    margin-left: 25rem;
+}
+
+.home .content{
+    flex:1 1 58rem;
+    text-align: center;
+    margin-top:3%;
+    padding-bottom: 1.3rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+    
+}
+
+.home .content p{
+    font-size: 1.9rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span{
+    padding:7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color: #fff;
+    margin-left: .5rem;    
+}
+
+.btn:hover{
+    background: var(--green);
+    color: #fff;    
+}
+
+.btn:hover span{
+    color: var(--green);
+    background: #fff;
+    margin-left: 1rem;
+}
+
+
+h2 {
+   font-size:2.9em; /* Adjust the font size for the title */
+}
+
+h1 {
+    color: var(--black);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+     /* Adjust the font size for the clinic name */
+}
+
+.about {
+    margin-top: 20px;
+    font-size: 1.5em;
+    justify-content: space-between;
+    
+    
+    /* Add some space between the clinic name and the "about" section */
+}
+
+.about i {
+    margin-right: 5px;
+     /* Add space between icons and text */
+}
+
+/* You can further style the icons and text as needed */
+
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: #16a085;
+    text-decoration-skip: ink;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color: rgb(66, 125, 86); 
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6em;
+    color: var(--light-color);
+    
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.related-job .job-list{
+    display: flex;
+    justify-content: space-between;
+}
+.related-job h3{
+    font-size: 3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.related-job h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100px;
+    background-color: var(--mainColor);
+    height: 1px;
+}
+
+.related-job .job-list .table1{
+    
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    transition: all 400ms ease;
+}
+.related-job .job-list .table1:hover {
+    transform: scale(1.03);
+  }
+  .related-job .job-list .table2{
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: block;
+    width:70%;
+    flex-direction: column;
+    transition: all 400ms ease;
+}
+.related-job .job-list .table2:hover {
+    transform: scale(1.03);
+  }
+  .related-job .job-list .table3{
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    transition: all 400ms ease;
+}
+.related-job .job-list .table3:hover {
+    transform: scale(1.03);
+  }
+  .related-job .job-list .table4{
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: block;
+    width: 70%;
+    flex-direction: column;
+    transition: all 400ms ease;
+}
+.related-job .job-list .table4:hover {
+    transform: scale(1.03);
+  }
+
+  .related-job .job-list .job-title {
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0;
+    color: #023047;
+  }
+  .related-job .job-list img {
+    width: 60px;
+  }
+  .related-job .job-list .details {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8;
+    flex: 1;
+  }
+  .btnb{
+    display: inline-block;
+    margin-top: 3.5rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btnb span{
+    padding:7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color: #fff;
+    margin-left: .5rem;    
+}
+
+.btnb:hover{
+    background: var(--green);
+    color: #fff;    
+}
+
+.btnb:hover span{
+    color: var(--green);
+    background: #fff;
+    margin-left: 1rem;
+}
+.tablink {
+    background-color: #89bcd0;
+    color: rgb(54, 54, 54);
+    transition: all 400ms ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    
+  }
+  
+  .tablink:hover {
+    background-color: #6ca89c;
+    background: #fff;
+    transform: scale(1.03);
+    
+  }
+  .description .box1 {
+    position:relative;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding:2.3rem;
+    width:100%;
+    height:30%;
+    background-image: url('image/backgroundapp1.jpg'); /* Add your background image */
+    background-size: cover; /* Adjust the blur intensity as needed */
+}
+
+.box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Add a class to trigger the animation */
+.box.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Add a class to trigger the animation */
+.box.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  
+  .description .box2 {
+    position:relative;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding:2.3rem;
+    width:100%;
+    height:30%;
+    background-image: url('backgroundapp1.jpg'); /* Add your background image */
+    background-size: cover; /* Adjust the blur intensity as needed */
+}
+.box2 .abdetails{
+    font-size: 1.9em;
+}
+.box2 .det{
+font-size: 1.5em;
+}
+.box2 .det i:hover{
+    background-color: #6ca89c;
+    padding-right: 2rem;
+}
+.job-description h2{
+    font-size:2.9em;
+}
+.job-description p{
+    margin-left: 2rem;
+    font-size: 1.5em;
+    width:52%;
+}
+.qualification h2{
+    font-size:2.9em;
+}
+.qualification li{
+    margin-left:2rem;
+    font-size:1.5em;
+}
+.skills h2{
+    font-size:2.9em;
+}
+.skills li{
+    margin-left:2rem;
+    font-size:1.5em;
+}
+.styled-line {
+    border: 1px solid #cfcece; 
+    margin: 20px 0;
+    width:90%; 
+}
+
+.form .form-details{
+   
+    background: #ffffff;
+    position:relative;
+    padding:2.5rem;
+    width:60%;
+    left:23rem;
+}
+.form .form-details .myform h2{
+    font-size: 2.3em;
+    color: rgb(159, 18, 18);
+}
+.form .form-details .myform label{
+    font-size: 1.6em;
+    
+}
+.myform input{
+    background-color:#ede9e9;
+    border-radius: 2px;
+    width:90%;
+    height:2.8rem;
+}
+.required {
+    color: red;
+    margin-left: 2px;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.home .content a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.home .content a i{
+    padding-right: .5rem;
+    color: var(--green);
+    font-size: 2rem; 
+    transform: translateX(-50%);  
+   
+}
+
+.home .content a:hover i{
+    padding-right: 2rem;
+    color: rgb(66, 125, 86);
+}
+.home .content i{
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--green);
+    padding: 1rem 0;
+    margin-left: 1rem;
+
+}
+.home .content i:hover {
+    transform: scale(1.2); 
+    color: rgb(66, 125, 86); 
+}
+.form .heading{
+    font-size:22px; 
+    background-color:#16a085; 
+    text-align:center; 
+    width:40%;
+    height:3.5rem;
+    border-radius:50px;
+    margin-left:32%;
+    color:#fff;
+}
+
