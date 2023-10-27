@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Laser Dentistry</h3>
 </section>
 <section class="heading">
-    <img src="Laser Dentistry.jpg">
+    <img src="image/Laser Dentistry.jpg">
     <ul class="content">
         <li>Laser dentistry is a cutting-edge and minimally invasive approach to various dental procedures that has revolutionized the field of dentistry.</li>
 

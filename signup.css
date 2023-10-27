@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 body{
-    background: url(image/signupbg.jpg);
+    background: url(image/signupbjimg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     width: 100%;
     height: auto;
     font-family: 'Poppins', sans-serif;
+    
 }
+
+
 .signup{
     width: 360px;
     height: 890px;

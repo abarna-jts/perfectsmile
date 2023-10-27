@@ -29,10 +29,12 @@
 }
 .error-message {
 color: red;
+font-size:1.5em;
 }
 
 .valid-message {
 color: green;
+font-size:1.5em;
 }
 .success {
   background-color: #9fd2a1;
@@ -173,25 +175,42 @@ color: green;
     <form class="myform" method="POST" action="process.php">
     <h2>Personal Details</h2>
     <hr class="styled-line">
+    <div>
     <label for="fname" >First Name <span class="required">*</span></label><br>
     <input type="text" id="fname" name="fname"><p id="name-message"></p><br>
+    </div>
+    <div>
     <label for="lname" >Last Name</label><br>
-    <input type="text" id="lname" name="lname"><p id="name-message"></p><br>
+    <input type="text" id="lname" name="lname"><p id="lname-message"></p><br>
+    </div>
+    <div>
     <label for="email">Email <span class="required">*</span></label><br>
     <input type="email" id="email" name="email"><p id="e-message"><br>
+    </div>
+    <div>
     <label for="contact">Contact <span class="required">*</span></label><br>
     <input type="number"  id="contact" name="contact"><p id="id-message"><br>
+    </div>
+    <div>
     <label for="gender">Gender <span class="required">*</span></label><br>
     <input type="text" id="gender" name="gender"><br>
+    </div>
+    <div>
     <label for="course">Course <span class="required">*</span></label><br>
     <input type="text"  id="course" name="course"><br>
+    </div>
+    <div>
     <label for="clgname">College Name <span class="required">*</span></label><br>
     <input type="text" id="clgname" name="clgname"><br>
+    </div>
+    <div>
     <label for="year" autocomplete="year">Year of Passing <span class="required">*</span></label><br>
     <input type="number" id="year" name="year"><br>
+    </div>
+    <div>
     <label for="location">Current Location <span class="required">*</span></label><br>
     <input type="text" id="location" name="location"><br>
-   
+    </div>
     
             
 <button class="btn" onclick="sendMail()" style="margin-left:25%;">Submit</button><br>
@@ -212,7 +231,7 @@ color: green;
       <p class="details">Responsible for collecting, analyzing and interpreting large data sets to help organizations make better decisions.</p>
       <a href="front.php" class="btn">Apply Now </a>
     </div>
-    <div class="table2">
+    <div class="table2" style="width: 70%;">
     <h2 class="job-title">Dental Surgeon</h2>
       <img src="image/surg.png">
       <p class="details">Responsible for planning, executing and closing projects on time and within budget.</p>
@@ -224,7 +243,7 @@ color: green;
       <p class="details">Responsible for managing the entire product life cycle, from ideation to launch and post-launch maintenance.</p>
       <a href="gdentist.php" class="btn">Apply Now </a>
     </div>
-    <div class="table4">
+    <div class="table4" style="width: 70%;">
     <h2 class="job-title">Dental Nurse</h2>
       <img src="image/nurse.png">
       <p class="details">Responsible for reaching out to potential customers and closing sales deals.</p>
@@ -378,11 +397,11 @@ let email = document.getElementById("email");
         if (x.length < minLength || x.length > maxLength) {
             // Display an error message
             text="Input must be more that 3 characters";
-            document.getElementById("name-message").innerHTML = '<p class="error-message">' + text + '</p>';
+            document.getElementById("lname-message").innerHTML = '<p class="error-message">' + text + '</p>';
         } else {
             // Clear the error message if the length is valid
             text= "valid input";
-            document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+            document.getElementById("lname-message").innerHTML = '<p class="valid-message">' + text + '</p>';
         }
       
         

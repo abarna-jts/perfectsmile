@@ -163,3 +163,7 @@ let currentIndex = 0;
 <label for="file" id="file">Choose a file:</label>
             <input type="file" name="file" id="file" accept=".pdf, .doc, .docx">
             <br>
+
+            <label for="gender">Gender <span class="required">*</span></label><br>
+            <input type="text" id="gender" name="gender"><br>
+            </div>

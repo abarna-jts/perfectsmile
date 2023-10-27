@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Tooth Removal</h3>
 </section>
 <section class="heading">
-    <img src="Teeth Removal.jpg">
+    <img src="image/Teeth Removal.jpg">
     <ul class="content">
         <li>Teeth removalis a common dental procedure in which a dentist or oral surgeon removes a tooth from its socket in the jawbone. </li> 
         <li>This procedure is typically performed for various reasons, including severe tooth decay, advanced gum disease, crowded or impacted teeth, or to prepare for orthodontic treatment.</li>

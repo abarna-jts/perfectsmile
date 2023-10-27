@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+#form-group .error p{
+    color:#f53b57;
+}
+#form-group .error input{
+    border-color:#f53b57;
+}
+#form-group .success p{
+    color:#115933;
+}
+#form-group .success input{
+    border-color:#05c46b;
+}
+#form-group p{
+    float:left;
+    font-size: 1.5rem;
+    
+}
+#form-group{
+    margin-bottom:10px;
+}
+.error-message {
+color: red;
+}
+
+.valid-message {
+color: green;
+}
+</style>
 </head>
 <body>
+
+<!--about section ends-->
+<header class="header">
+        <a href="#" class="logo">
+           
+        <i class="fas fa-dental"></i> PerfectSmile </a>
+    
+        <nav class="navbar">
+            <ul>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./our.services.php">Services</a></li>
+            <li><a href="./booknow.php">Book Online</a></li>
+            <li><a href="./membership.php">Membership plan</a></li>
+            <li><a href="./cr.php">Career</a></li>
+            <li><a href="./aboutus.php">About us</a></li>
+            <li><a href="./login.php" class="button">Login</a></li>
+            <!-- <a href="./Account.php" class="scroll">Account -->
+                <!-- <p> Welcome
+                    <div class="menu">
+                    <?php echo $_SESSION['email'];?>
+                    </div> -->
+                <!-- </p> -->
+            <!-- </a> -->
+            <li><a href="./logout.php" class="button1">Logout</a></li>   
+        </ul>
+        </nav>    
+            <div id="menu-btn" class="fas fa-bar"></div>    
+    </header>
+    <section class="home" id="home">
+    <div class="image">
+    <img src="image/pl.png">
+    </div>
+    <div class="content">
+        <h3>Perfect Smile</h3>
+        <p>Where Smiles Shine Brighter Every Day!</p>
+        <a href="./contactus.php" class="btn"> contact us </a>
+    </div>
+</section>
+<<!--about section starts-->
 <section class="about" id="about">
     <h1 class="heading"> <span>about</span> us </h1>
     <div class="row">
@@ -17,7 +86,7 @@
             <h3>We take care of your healthy smile!!</h3>
             <p>At <span>Perfect Smile</span>, we're not just about smiles; we're about creating confidence, one smile at a time. Our mission is to transform dental care into an experience that you actually look forward to. We're a team of passionate professionals dedicated to delivering the best in oral health and aesthetics.</p>
             
-            <a href="#" class="btn"> Read More </a>
+            <a href="./aboutus.php" class="btn"> Read More </a>
         </div>
     </div>
 </section>
@@ -32,10 +101,10 @@
             <h3>Mohammed</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
 
@@ -44,22 +113,22 @@
             <h3>Valentina</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
 
         <div class="box">
-            <img src="image/doctor3.jpg" alt="">
+            <img src="image/doctor3.jpg" alt="" id="myimg">
             <h3>Mike</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
 
@@ -68,10 +137,10 @@
             <h3>Xavier</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
 
@@ -80,10 +149,10 @@
             <h3>Sakura</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
 
@@ -92,10 +161,10 @@
             <h3>Sofia</h3>
             <span>Expert Doctors</span>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#" class="fab fa-twitter-f"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#" class="fab fa-instagram-f"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#" class="fab fa-LinkedIn-f"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
     </div>
@@ -103,19 +172,18 @@
 <!--doctors section ends-->
 
 <!--booking section starts-->
-<!--booking section starts-->
 <section class="book" id="book">
     <h1 class="heading"> <span>book</span> now </h1>
         <div class="content">
             <p>Ready to schedule your next dental appointment? Look no further! Booking with us is as easy as saying 'cheese' for a smile.</p>
         </div> 
         <div class="row">
-            <form action="index.php" method="post">
-                <h3>Book Appointment</h3>
-                <input type="text" placeholder="your name" class="box">
-                <input type="number" placeholder="your number" class="box">
-                <input type="email" placeholder="your email" class="box">
-                <input type="date" class="box">
+        <form action="index.php" id="form-group" method="post">
+                <h3 class="booking">Book Appointment</h3>
+                <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
+                <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
+                <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
+                <input type="date" id="date" class="box"><p id="date-message"></p>
                 <input type="submit" placeholder="book now" class="btn">
             </form>
         </div>
@@ -126,10 +194,10 @@
 <!--review section starts-->
 <section class="review" id="review">
     <h1 class="heading"> client's <span> review </span></h1>
-    <div class="box-container">
+    <div class="box-container" reveal>
 
         <div class="box">
-            <img src="client2.jpg" alt="">
+            <img src="image/client2.jpg" alt="">
             <h3>John D</h3>
             <div class="stars">
                 <ion-icon name="star"></ion-icon></i>
@@ -174,29 +242,29 @@
 <!--blogs section starts-->
 <section class="blogs" id="blogs">
     <h1 class="heading"> our <span> blogs </span></h1>
-    <div class="box-container">
+    <div class="box-containers">
 
-        <div class="box">
+        <div class="boxs">
             <div class="image">
                 <img src="image/blog1.jpg" alt="">
             </div>
-            <div class="content">
-                <div class="icon">
+            <div class="contents">
+                <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 20th March, 2020</a>
                     <a href="#"> <i class="fas fa-user"></i> by Sakura </a>
                 </div>
                 <h3>Teeth Whitening: Myths vs. Facts</h3>
                 <p>Unlock the secrets to a brighter smile as we debunk common myths and reveal the science-backed facts about teeth whitening. Get ready to smile with confidence as we separate fiction from the truth, and discover the real path to a dazzling, pearly-white grin!</p>
-                <a href="blog1.php" class="btn1"> learn more </a>
+                <a href="blog1.php" style="margin-top:7.4rem;" class="btn3"> learn more </a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxs">
             <div class="image">
                 <img src="image/blog2.jpg" alt="">
             </div>
-            <div class="content">
-                <div class="icon">
+            <div class="contents">
+                <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 1st June, 202</a>
                     <a href="#"> <i class="fas fa-user"></i> by Mike </a>
                 </div>
@@ -206,12 +274,12 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="boxs">
             <div class="image">
                 <img src="image/blog3.jpg" alt="">
             </div>
-            <div class="content">
-                <div class="icon">
+            <div class="contents">
+                <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 30th September, 2020</a>
                     <a href="#"> <i class="fas fa-user"></i> by John Doe </a>
                 </div>
@@ -272,14 +340,45 @@
 
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
+
+
 <!--footer section ends-->
+<script>
+// Get all the review box elements
+const reviewBoxes = document.querySelectorAll('.box');
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to add the animated class to elements in the viewport
+function animateOnScroll() {
+    reviewBoxes.forEach((box) => {
+        if (isInViewport(box)) {
+            box.classList.add('animated');
+        }
+    });
+}
+
+// Listen for the scroll event to trigger animations
+window.addEventListener('scroll', animateOnScroll);
+
+// Initial check to see if any elements are already in the viewport
+animateOnScroll();
+
+</script>
+
 
     
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
 </body>
 </html>

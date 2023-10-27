@@ -27,7 +27,7 @@
         <h3 style="white-space: nowrap;">Kids Dentistry</h3>
 </section>
 <section class="heading">
-    <img src="./kidsdentistry.jpg" style="border-color:#16a085;">
+    <img src="image/kidsdentistry.jpg" style="border-color:#16a085;">
     <ul class="content" style="color:#16a085">
         <li style="font-size: 1.6rem; color: #36455c;">Pediatric dentistry is a specialized branch of dentistry that focuses on the oral health of children from infancy through their teenage years.</li>
         <li style="font-size: 1.6rem; color: #36455c;">It plays a crucial role in ensuring that children develop and maintain healthy teeth and gums as they grow.</li> 

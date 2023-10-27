@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Dental Implants</h3>
 </section>
 <section class="heading">
-    <img src="dentalimplant.jpg">
+    <img src="image/dentalimplant.jpg">
     <ul class="content">
         <li>A dental implant is a dental procedure designed to replace missing teeth and restore both function and aesthetics to a patient's smile.</li>
         <li>It consists of a titanium post that is surgically implanted into the jawbone to serve as a sturdy foundation for an artificial tooth or crown.</li> 

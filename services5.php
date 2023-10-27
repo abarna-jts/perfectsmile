@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Gum Therapy</h3>
 </section>
 <section class="heading">
-    <img src="Gum Therapy.jpg">
+    <img src="image/Gum Therapy.jpg">
     <ul class="content">
         <li>Gum therapy, also known as periodontal therapy or periodontal treatment, is a crucial aspect of oral healthcare aimed at preventing and treating gum disease.</li>
         

@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Root Canal</h3>
 </section>
 <section class="heading">
-    <img src="./rootcanal.jpg" style="border-color:#16a085;">
+    <img src="image/rootcanal.jpg" style="border-color:#16a085;">
     <ul class="content" style="color:#16a085">
         <li style="font-size: 1.6rem; color: #36455c;">Root canal therapy is a common dental procedure aimed at treating and saving a severely damaged or infected tooth.</li>
         <li style="font-size: 1.6rem; color: #36455c;">The process involves the removal of the infected or damaged pulp, which can become infected due to deep cavities, fractures, or trauma to the tooth.</li> 

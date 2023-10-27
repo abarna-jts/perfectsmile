@@ -26,7 +26,7 @@
         <h3 style="white-space: nowrap;">Teeth Whitening</h3>
 </section>
 <section class="heading">
-    <img src="Teeth Whitening.jpg">
+    <img src="image/Teeth Whitening.jpg">
     <ul class="content">
         <li>Teeth whitening is designed to enhance the appearance of a person's smile by lightening the color of their teeth.</li>
 

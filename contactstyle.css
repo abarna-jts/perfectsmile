@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);    
+}
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.logo{
+    justify-content:flex-start
+}
+
+.header{
+    padding: 2rem;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background: #fff;    
+}
+
+
+.header .logo{
+    font-size: 2.8rem;
+    color: var(--black);    
+    text-align: left;
+    margin-right:5.5rem;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header .logo i{
+    color: var(--green);    
+}
+
+.header .navbar a{
+    font-size: 1.9rem;
+    color: var(--light-color);
+    margin-left: 2.5rem;
+    transition: transform 0.3s; 
+    
+}
+.header .navbar ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+
+.header .navbar a:hover{       
+    color: var(--black);
+    transform: scale(1.1); 
+  
+}
+.header .scroll a:hover .menu{
+    display: block;
+    position:absolute;
+    background: #eee;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;    
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: #16a085;
+    text-decoration-skip: ink;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color: rgb(66, 125, 86); 
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6em;
+    color: var(--light-color);
+    
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+@media (max-width: 100px) {
+    .home {
+        flex-direction: column; /* Stack image and content on top of each other */
+        align-items: flex-start; /* Adjust alignment as needed */
+    }
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    
+    gap: 1.5em;
+    padding-top: 10rem;
+    justify-content: center;
+}
+
+.home .image{
+    flex:1 1 45rem;    
+}
+
+.home .image img{
+    width: 20rem; /* Adjust the width to your desired size */
+    height: 20rem;
+    margin-left:28rem;
+}
+
+.home .content{
+    flex:1 1 58rem;
+
+    padding-bottom: 2rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+
+    
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span{
+    padding:7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color: #fff;
+    margin-left: .5rem;    
+}
+
+.btn:hover{
+    background: var(--green);
+    color: #fff;    
+}
+
+.btn:hover span{
+    color: var(--green);
+    background: #fff;
+    margin-left: 1rem;
+}
+.button {
+    display: inline-block;
+    padding: 2px 15px 2px; /* Adjust padding as needed */
+    background-color: #a9b5c2; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #19eec3; /* Change the background color on hover */
+}
+.button1 {
+    display: inline-block;
+    padding: 2px 15px 2px; /* Adjust padding as needed */
+    background-color: #a9b5c2; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover {
+    background-color: #f21909; /* Change the background color on hover */
+}

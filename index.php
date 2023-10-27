@@ -77,7 +77,7 @@ color: green;
     <div class="content">
         <h3>Perfect Smile</h3>
         <p>Where Smiles Shine Brighter Every Day!</p>
-        <a href="./contactus.php" class="btn"> contact us </a>
+        <a href="contactus.php" class="btn"> contact us </a>
     </div>
 </section>
 
@@ -104,7 +104,7 @@ color: green;
     </div>
 
     <div class="icons">
-        <i class="fas fa-hospitals"></i>
+    <i class="fas fa-hospital"></i>
         <h3>80+</h3>
         <p>available hospitals</p>
     </div>
@@ -137,7 +137,7 @@ color: green;
             <div class="box">
                 <img src="image/teeth_whitening.png" alt=""></i>
                 <h3>Teeth Whitening</h3>
-                <p>Brighten up your day with a sparkling smile!</p>
+                <p style="width:40rem;">Brighten up your day with a sparkling smile!</p>
                 <a href="services6.php" class="btn">Learn more</a>
             </div>
         </div>
@@ -203,7 +203,7 @@ color: green;
             <h3>We take care of your healthy smile!!</h3>
             <p>At <span>Perfect Smile</span>, we're not just about smiles; we're about creating confidence, one smile at a time. Our mission is to transform dental care into an experience that you actually look forward to. We're a team of passionate professionals dedicated to delivering the best in oral health and aesthetics.</p>
             
-            <a href="#" class="btn"> Read More </a>
+            <a href="./aboutus.php" class="btn"> Read More </a>
         </div>
     </div>
 </section>
@@ -372,7 +372,7 @@ color: green;
                 </div>
                 <h3>Teeth Whitening: Myths vs. Facts</h3>
                 <p>Unlock the secrets to a brighter smile as we debunk common myths and reveal the science-backed facts about teeth whitening. Get ready to smile with confidence as we separate fiction from the truth, and discover the real path to a dazzling, pearly-white grin!</p>
-                <a href="blog1.php" class="btn1"> learn more </a>
+                <a href="blog1.php" style="margin-top:7.4rem;" class="btn3"> learn more </a>
             </div>
         </div>
 

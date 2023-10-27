@@ -74,7 +74,7 @@
         <div class="box">
             <img src="image/teeth_whitening.png" alt=""></i>
             <h3>Teeth Whitening</h3>
-            <p>Brighten up your day with a sparkling smile!</p>
+            <p style="width:40rem;">Brighten up your day with a sparkling smile!</p>
             <a href="services6.php" class="btn">Learn more</a>
         </div>
     </div>
@@ -309,7 +309,7 @@
                 </div>
                 <h3>Teeth Whitening: Myths vs. Facts</h3>
                 <p>Unlock the secrets to a brighter smile as we debunk common myths and reveal the science-backed facts about teeth whitening. Get ready to smile with confidence as we separate fiction from the truth, and discover the real path to a dazzling, pearly-white grin!</p>
-                <a href="blog1.php" class="btn1"> learn more </a>
+                <a href="blog1.php" style="margin-top:7.4rem;" class="btn3"> learn more </a>
             </div>
         </div>
 

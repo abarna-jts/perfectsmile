@@ -28,7 +28,7 @@
     </div>
 </section>
 <section class="heading">
-    <img src="./dentalbraces.jpg" style="border-color:#16a085;">
+    <img src="image/dentalbraces.jpg" style="border-color:#16a085;">
     <ul class="content" style="color:#16a085">
         <li>Dental braces, commonly referred to as braces, are orthodontic devices used to straighten and align teeth, correct bite issues, and improve overall oral health and aesthetics.</li>
         <li>They consist of metal or ceramic brackets that are attached to the teeth and connected by wires and bands.</li> 

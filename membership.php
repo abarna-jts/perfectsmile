@@ -19,9 +19,11 @@
             <a href="index.php">Home</a>
             <a href="aboutus.php">About us</a>
             <a href="our.services.php">Services</a>
-            <a href="booknow.php">Appointments</a>
+            <a href="booknow.php">Book Online</a>
             <a href="membership.php">Membership plan</a>
             <a href="cr.php">Career</a>
+            <a href="cr.php">About us</a>
+            <a href="cr.php" class="button1">Logout</a>
 
         </nav>    
             <div id="menu-btn" class="fas fa-bar"></div>    
