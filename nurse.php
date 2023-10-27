@@ -148,15 +148,23 @@ font-size:1.5em;
             <h2>About Company</h2>
             <br>
             <br>
+            <br>
+            <br>
             <p class="abdetails">
             Company Name: Perfect Smile<br>
             <br>
+            <br>
+            <br>
+
             We take care of your healthy smile!!
             At Perfect Smile, we're not just about smiles; we're about creating confidence, one smile at a time. Our mission is to transform dental care into an experience that you actually look forward to. We're a team of passionate professionals dedicated to delivering the best in oral health and aesthetics.
             <br>
             <br>
             </p>
             <p class="det">
+            <br>
+            <br>
+            
             <a href="tel:7305686253" style="color:#000000;"> <i class="fas fa-phone"></i> 7305686253 </a><br>
             <a href="tel:9840734794" style="color:#000000;"> <i class="fas fa-phone"></i> 9840734794 </a><br>
             <a href="mailto:jdcare1997@gmail.com" style="color:#000000;"> <i class="fas fa-envelope"></i> jdcare1997@gmail.com </a><br>
@@ -300,127 +308,7 @@ font-size:1.5em;
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
 
-<script>
-    const jobDescriptionButton = document.getElementById("showJobDescription");
-    const aboutCompanyButton = document.getElementById("showAboutCompany");
-    const jobDescriptionContent = document.querySelector(".box1");
-    const aboutCompanyContent = document.querySelector(".box2");
-
-    // Initially, show the "Job Description" content and hide the "About Company" content
-    jobDescriptionContent.style.display = "block";
-    aboutCompanyContent.style.display = "none";
-
-    jobDescriptionButton.addEventListener("click", function () {
-        jobDescriptionContent.style.display = "block";
-        aboutCompanyContent.style.display = "none";
-    });
-
-    aboutCompanyButton.addEventListener("click", function () {
-        jobDescriptionContent.style.display = "none";
-        aboutCompanyContent.style.display = "block";
-    });
-</script>
-
-
-<script>
-// Get all the review box elements
-const reviewBoxes = document.querySelectorAll('.box');
-
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// Function to add the animated class to elements in the viewport
-function animateOnScroll() {
-    reviewBoxes.forEach((box) => {
-        if (isInViewport(box)) {
-            box.classList.add('animated');
-        }
-    });
-}
-
-// Listen for the scroll event to trigger animations
-window.addEventListener('scroll', animateOnScroll);
-
-// Initial check to see if any elements are already in the viewport
-animateOnScroll();
-
-</script>
-
-<!-- application validation -->
-<script>
-let fname = document.getElementById("fname");
-let lname = document.getElementById("lname");
-let email = document.getElementById("email");
-
-            
-        fname.addEventListener('input', function () {
-          // Get the value of the input
-          var x = fname.value;
-          var text;
-          
-          // Define the minimum and maximum allowed length
-          var minLength = 3;
-          var maxLength = 30;
-    
-          // Check the length of the input value
-          if (x.length < minLength || x.length > maxLength) {
-              // Display an error message
-              text="Input must be more that 3 characters";
-              document.getElementById("name-message").innerHTML = '<p class="error-message">' + text + '</p>';
-          } else {
-              // Clear the error message if the length is valid
-              text= "valid input";
-              document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
-          }
-        
-          
-      });
-
-      lname.addEventListener('input', function () {
-        // Get the value of the input
-        var x = lname.value;
-        var text;
-        
-        // Define the minimum and maximum allowed length
-        var minLength = 3;
-        var maxLength = 30;
-  
-        // Check the length of the input value
-        if (x.length < minLength || x.length > maxLength) {
-            // Display an error message
-            text="Input must be more that 3 characters";
-            document.getElementById("name-message").innerHTML = '<p class="error-message">' + text + '</p>';
-        } else {
-            // Clear the error message if the length is valid
-            text= "valid input";
-            document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
-        }
-      
-        
-    });
-
-
-      email.addEventListener('input',function(){
-        var z=email.value;
-        var text;
-
-        if (!z.includes('@')) {
-            text = "Email must contain '@' symbol";
-            document.getElementById("e-message").innerHTML = '<p class="error-message">' + text + '</p>';
-    } else {
-        text = "Valid email";
-        document.getElementById("e-message").innerHTML = '<p class="valid-message">' + text + '</p>';
-    }
-    
-      }); </script>
+<script src="crvalid.js"></script>
  
    
 </body>
