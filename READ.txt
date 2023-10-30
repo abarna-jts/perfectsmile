@@ -45,3 +45,34 @@
     </div>
 </body>
 </html>
+
+<?php
+include 'paymentdb.php';   //connecting database
+
+// print_r($_POST);
+
+  $name=$_POST['name'];       //post ->used to send data to a server 
+  $email=$_POST['email'];         //get ->used to request data from a specified resource.
+  $address=$_POST['address'];
+  $city=$_POST['city'];
+  $state=$_POST['state'];
+  $zip=$_POST['zip'];
+  $card_number=$_POST['card_number'];
+  $exp_month=$_POST['exp_month'];
+  $year=$_POST['year'];
+  $cvv=$_POST['cvv'];
+  
+
+
+$sql ="INSERT INTO payment (name,email,address,city,state,zip,card_number,exp_month, year,cvv)VALUES('$name','$email','$address','$city',' $state','$zip',' $card_number','$exp_month','$year','$cvv')";
+
+$result =mysqli_query($con,$sql);   //this method allow us to execute the above query
+
+if ($result) {
+  echo 'Submitted Successfully';
+} else {
+  echo 'Submission Failed';
+}
+
+
+?>

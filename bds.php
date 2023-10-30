@@ -184,7 +184,7 @@ font-size:1.5em;
     <h2>Personal Details</h2>
     <hr class="styled-line">
     <div>
-    <label for="fname" >First Name <span class="required">*</span></label><br>
+    <label for="fname" required >First Name <span class="required">*</span></label><br>
     <input type="text" id="fname" name="fname"><p id="name-message"></p><br>
     </div>
     <div>
@@ -197,7 +197,7 @@ font-size:1.5em;
     </div>
     <div>
     <label for="contact">Contact <span class="required">*</span></label><br>
-    <input type="number"  id="contact" name="contact"><p id="id-message"><br>
+    <input type="number"  id="contact" name="contact"><p id="contact-message"><br>
     </div>
     <div>
     <label for="gender">Gender <span class="required">*</span></label><br>
@@ -219,12 +219,15 @@ font-size:1.5em;
     <label for="location">Current Location <span class="required">*</span></label><br>
     <input type="text" id="location" name="location"><br>
     </div>
-    
+    <div id="formMessage" style="color: red; font-size:1.6em;"></div>
             
-<button class="btn" onclick="sendMail()" id="openModal" style="margin-left:25%;">Submit</button><br>
+<button class="btn" id="openModal" style="margin-left:25%;">Submit</button><br>
 <a href="cr.php" class="btn" style="float:right; margin-right:43%; margin-top:-5.5%;">Cancel </a>
 </form>
+
 </div>
+
+</section>
 <!-- The Modal -->
 <div id="myModal" class="modal">
         <div class="modal-content">
@@ -234,9 +237,7 @@ font-size:1.5em;
             <p>Thank You for your application. We will required you later. Check your Mail.
             </p>
         </div>
-    </div>
-</section>
-
+</div>
 <section class="related-job">
 <h3>Related Jobs</h3>
 <div class="job-list">

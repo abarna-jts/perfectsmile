@@ -117,8 +117,29 @@ let email = document.getElementById("email");
     }
     
       });
+
  
 
+      contact.addEventListener('input',function(){
+        var m=contact.value;
+        var text;
+
+        var minid = 10;
+        var maxid = 10;
+
+        if (m.length < minid || m.length > maxid) {
+            text = "Input should be 10 number";
+            document.getElementById("contact-message").innerHTML = '<p class="error-message">' + text + '</p>';
+    } else {
+        text = "Valid email";
+        document.getElementById("contact-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+    }
+    
+      });
+    
+
+ 
+        function popup(){
         // Get the modal and buttons
         var modal = document.getElementById('myModal');
         var btn = document.getElementById('openModal');
@@ -150,3 +171,25 @@ let email = document.getElementById("email");
                 }, 300); // Wait for the transition to complete
             }
         }
+    }
+
+
+        document.getElementById("openModal").addEventListener("click", function () {
+            var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var contact = document.getElementById("contact").value;
+            var gender = document.getElementById("gender").value;
+            var course = document.getElementById("course").value;
+            var year = document.getElementById("year").value;
+            var location = document.getElementById("location").value;
+        
+            if (fname === "" || email === "" || contact === "" || gender === "" || course === "" || year === "" || location === "") {
+                formMessage.textContent = "Please fill in all the form fields.";
+                return false;
+            } else {
+                formMessage.textContent = "";
+                popup(); // Clear any previous error message
+                // Perform other actions, e.g., submit the form
+            }
+        });
+        
