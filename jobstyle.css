@@ -682,4 +682,24 @@ font-size: 1.5em;
 .close:hover {
     color: #000;
 }
+/* Style the label for gender */
+label[for="gender"] {
+    display: block;
+    margin-bottom: -1rem;
+}
+
+/* Style the gender select element */
+select#gender {
+    font-family: monospace;
+    width: 90%;
+    height: 30px; /* You can adjust the height as needed */
+    font-size: 1.1rem;
+    background-color:#ede9e9;
+}
+
+/* Style the gender select options */
+select#gender option {
+    font-size: 1.4rem;
+    padding: 5px;
+}
 

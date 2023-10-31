@@ -69,27 +69,160 @@ if($success){
 ?>
     <div class="signup">
         <h1>Sign Up</h1>
-        <h4>It's and only takes a minute</h4>
-        <form action="signup.php" method="post">
-            <label>First Name</label>
-            <input type="text" name="fname" required>
-            <label>Last Name</label>
-            <input type="text" name="lname" required>
-            <label>Gender</label>
-            <input type="text" name="gender" required>
-            <label>Contact Address</label>
-            <input type="tel" name="number" required>
-            <label>Address</label>
-            <input type="text" name="add" required>
-            <label>Email</label>
-            <input type="email" name="mail" required>
-            <label>Password</label>
-            <input type="password" name="pass" required>
+        <h4>It's only takes a minute</h4>
+        <form id="form-group" action="signup.php" method="post">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"><p id="name-message"></p>
+          </div>
+            <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" required><p id="lname-message"></p>
+            </div>
+            <div>
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" id="gender"  required>
+            </div>
+            <div>
+            <label for="number">Contact Address</label>
+            <input type="number" name="number" id="number" required><p id="contact-message"></p>
+            </div>
+            <div>
+            <label for="add">Address</label>
+            <input type="text" name="add" id="add" required>
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><p id="e-message"></p>
+            </div>
+            <div>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required><p id="password-message"></p>
+            </div>
+           
             <input type="submit" name="sub" value="Submit">
         </form>
         <p>By Clicking the Sign Up button, you agree to our<br><a href="">Terms and Conditions</a> and <a href="#">Policy Privacy</a></p>
         <p>Already have an account? 
             <a href="login.php">Login</a></p>
     </div>
+    <script>
+
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
+var email = document.getElementById("email");
+var passwordInput = document.getElementById('pass');
+
+
+
+fname.addEventListener('input', function () {
+          // Get the value of the input
+          var x = fname.value;
+          var text;
+          
+          // Define the minimum and maximum allowed length
+          var minLength = 3;
+          var maxLength = 30;
+    
+          // Check the length of the input value
+          if (x.length < minLength || x.length > maxLength) {
+              // Display an error message
+              text="Input must be more that 3 characters";
+              document.getElementById("name-message").innerHTML = '<p class="error-message">' + text + '</p>';
+          } else {
+              // Clear the error message if the length is valid
+              text= "valid input";
+              document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+          }
+        
+          
+      });
+
+      lname.addEventListener('input', function () {
+        // Get the value of the input
+        var x = lname.value;
+        var text;
+        
+        // Define the minimum and maximum allowed length
+        var minLength = 3;
+        var maxLength = 30;
+  
+        // Check the length of the input value
+        if (x.length < minLength || x.length > maxLength) {
+            // Display an error message
+            text="Input must be more that 3 characters";
+            document.getElementById("lname-message").innerHTML = '<p class="error-message">' + text + '</p>';
+        } else {
+            // Clear the error message if the length is valid
+            text= "valid input";
+            document.getElementById("lname-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+        }
+      
+        
+    });
+
+
+      email.addEventListener('input',function(){
+        var z=email.value;
+        var text;
+
+        if (!z.includes('@')) {
+            text = "Email must contain '@' symbol";
+            document.getElementById("e-message").innerHTML = '<p class="error-message">' + text + '</p>';
+    } else {
+        text = "Valid email";
+        document.getElementById("e-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+    }
+    
+      });
+
+ 
+
+      number.addEventListener('input',function(){
+        var m=number.value;
+        var text;
+
+        var minid = 10;
+        var maxid = 10;
+
+        if (m.length < minid || m.length > maxid) {
+            text = "Input should be 10 number";
+            document.getElementById("contact-message").innerHTML = '<p class="error-message">' + text + '</p>';
+    } else {
+        text = "Valid email";
+        document.getElementById("contact-message").innerHTML = '<p class="valid-message">' + text + '</p>';
+    }
+    
+      });
+    
+      passwordInput.addEventListener('input', function () {
+    // Get the value of the input
+    var password = passwordInput.value;
+    var text;
+    
+    // Define the password strength criteria
+    var minLength = 8;  // Minimum length
+    var hasUppercase = /[A-Z]/.test(password);  // At least one uppercase letter
+    var hasSpecialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password);  // At least one special character
+    var hasNumber = /\d/.test(password);  // At least one digit
+
+    // Check if the password meets all criteria
+    if (password.length < minLength) {
+        text = "Password must be at least 8 characters long.";
+    } else if (!hasUppercase) {
+        text = "Password must contain at least one uppercase letter.";
+    } else if (!hasSpecialChar) {
+        text = "Password must contain at least one special character.";
+    } else if (!hasNumber) {
+        text = "Password must contain at least one number.";
+    } else {
+        text = "Password is valid.";
+    }
+
+    // Display the error message or valid message
+    document.getElementById("password-message").innerHTML = '<p class="' + (text === "Password is valid." ? "valid-message" : "error-message") + '">' + text + '</p';
+});
+      </script>
+
 </body>
 </html>

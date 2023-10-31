@@ -37,7 +37,7 @@
         <div class="content">
             <h3>Career Details</h3>
             <p>Where Smiles Shine Brighter Every Day!</p>
-            <a href="./contactus.php" class="btn"> contact us </a>
+            <a href="./contactus.php" class="btn"> Contact us </a>
         </div>
     </section>
     
@@ -83,9 +83,9 @@
     
             <div class="box">
                 <h3>Follow Us</h3>
-            <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i> facebook </a>
-            <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i> twitter </a>
-            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> instagram </a>
+            <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i> Facebook </a>
+            <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i> Twitter </a>
+            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> Instagram </a>
             <a href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a> 
             <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i> Pinterest </a>                               
             </div>

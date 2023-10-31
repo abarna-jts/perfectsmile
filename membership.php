@@ -37,7 +37,7 @@
         <div class="content">
             <h3>Membership Details</h3>
             <!-- <p>Where Smiles Shine Brighter Every Day!</p> -->
-            <a href="./contactus.php" class="btn"> contact us </a>
+            <a href="./contactus.php" class="btn"> Contact us </a>
         </div>
     </section>
     

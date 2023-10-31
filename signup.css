@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 body{
     background: url(image/signupbjimg.jpg);
     background-repeat: no-repeat;
@@ -7,14 +9,14 @@ body{
     background-attachment: fixed;
     width: 100%;
     height: auto;
-    font-family: 'Poppins', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
 
 .signup{
-    width: 360px;
-    height: 890px;
+    width: 28%;
+    height: 150%;
     margin: auto;
     background: white;
     border-radius: 3px;
@@ -32,11 +34,15 @@ body{
 }
 h1{
     text-align: center;
+    font-weight: 400;
+    color:#3285f1;
     
 }
 h4{
     text-align: center;
     padding-top:3%;
+    font-weight: 700;
+    color:#3285f1;
 }
 form{
     width: 300px;
@@ -58,7 +64,7 @@ form input{
 input[type="submit"]{
     width: 320px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 3rem;
     border: none;
     background-color: #16a085;
     color: white;
@@ -73,4 +79,61 @@ p{
     text-align: center;
     padding-top: 18px;
     font-size:15px;
+}
+
+#form-group .error p{
+    color:#f53b57;
+}
+#form-group .error input{
+    border-color:#f53b57;
+}
+#form-group .success p{
+    color:#115933;
+    
+}
+#form-group .success input{
+    border-color:#05c46b;
+}
+#form-group p{
+    float:left;
+    font-size: 1rem;
+    position: absolute;
+}
+#form-group{
+    margin-bottom:5px;
+}
+#form-group div{
+    position: relative;
+    height: auto;
+}
+.error-message {
+color: red;
+font-size:1em;
+top:-1rem;
+width:20rem;
+height:0.5rem;
+text-align: left;
+
+}
+#form-group label{
+display:block;
+
+}
+.valid-message {
+    float: left;
+color: green;
+font-size:1em;
+top:-1rem;
+width:20rem;
+height:0.5rem;
+text-align: left;
+}
+.success {
+  background-color: #9fd2a1;
+  
+  color: #326b07;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-top: 10px;
 }

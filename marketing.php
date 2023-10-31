@@ -185,8 +185,8 @@ font-size:1.5em;
     <h2>Personal Details</h2>
     <hr class="styled-line">
     <div>
-    <label for="fname" >First Name <span class="required">*</span></label><br>
-    <input type="text" id="fname" name="fname"><p id="name-message"></p><br>
+    <label for="fname" required >First Name <span class="required">*</span></label><br>
+    <input type="text" id="fname" name="fname" required><p id="name-message"></p><br>
     </div>
     <div>
     <label for="lname" >Last Name</label><br>
@@ -194,38 +194,59 @@ font-size:1.5em;
     </div>
     <div>
     <label for="email">Email <span class="required">*</span></label><br>
-    <input type="email" id="email" name="email"><p id="e-message"><br>
+    <input type="email" id="email" name="email" required><p id="e-message"><br>
     </div>
     <div>
     <label for="contact">Contact <span class="required">*</span></label><br>
-    <input type="number"  id="contact" name="contact"><p id="id-message"><br>
+    <input type="number"  id="contact" name="contact" required><p id="contact-message"><br>
     </div>
     <div>
     <label for="gender">Gender <span class="required">*</span></label><br>
-    <input type="text" id="gender" name="gender"><br>
+    <select id="gender" name="gender" required>
+        <option>Choose gender..</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
     </div>
     <div>
+        <br>
     <label for="course">Course <span class="required">*</span></label><br>
-    <input type="text"  id="course" name="course"><br>
+    <select id="gender" name="course" required>
+    <option>Choose Course..</option>
+        <option value="Bsc.Nursing">Bsc Nursing</option>
+        <option value="BDS">BDS</option>
+        <option value="MDS">MDS</option>
+        
+    </select>
     </div>
-    <div>
+    <div><br>
     <label for="clgname">College Name <span class="required">*</span></label><br>
-    <input type="text" id="clgname" name="clgname"><br>
+    <input type="text" id="clgname" name="clgname" required><br>
     </div>
-    <div>
+    <div><br>
     <label for="year" autocomplete="year">Year of Passing <span class="required">*</span></label><br>
-    <input type="number" id="year" name="year"><br>
+    <select id="gender" name="year" required>
+    <option>Choose year..</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="Below 2020">Below 2020</option>
+    </select>
     </div>
-    <div>
+    <div><br>
     <label for="location">Current Location <span class="required">*</span></label><br>
-    <input type="text" id="location" name="location"><br>
+    <input type="text" id="location" name="location" required><br>
     </div>
-    
+    <div id="formMessage" style="color: red; font-size:1.6em;"></div>
             
-<button class="btn" onclick="sendMail()" style="margin-left:25%;">Submit</button><br>
+<button class="btn" id="openModal" style="margin-left:25%;">Submit</button><br>
 <a href="cr.php" class="btn" style="float:right; margin-right:43%; margin-top:-5.5%;">Cancel </a>
 </form>
+
 </div>
+
 </section>
 
 <section class="related-job">

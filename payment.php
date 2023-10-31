@@ -55,27 +55,27 @@ font-size:1em;
 	<div class="container">
 		<div class="left">
 			<h3>BILLING ADDRESS</h3>
-			<form id="form-group">
+			<form id="form-group" action="booking_action.php" method="POST">
 				<div>
 				Full name
-				<input type="text" name="" id="name" placeholder="Enter name"><br>
+				<input type="text" name="name" id="name" placeholder="Enter name"><br>
 				<p id="name-message">
 				</div>
 				<div>
 					<br>
 				Email
-				<input type="text" name="" id="email" placeholder="Enter email">
+				<input type="text" name="email" id="email" placeholder="Enter email">
 				<p id="e-message">
 				</div>
 				<div>
 				<br>
 				Address
-				<input type="text" name="" id="address" placeholder="Enter address">
+				<input type="text" name="address" id="address" placeholder="Enter address">
 				</div>
 				<div>
 				<br>
 				City
-				<input type="text" name="" placeholder="Enter City"><br>
+				<input type="text" name="city" id="city" placeholder="Enter City"><br>
 				<div id="zip">
 					<label>
 					<br>
@@ -92,7 +92,7 @@ font-size:1em;
 						<label>
 						<br>
 						Zip code
-						<input type="number" name="" id="zipcode" placeholder="Zip code"><p id="zip-message">
+						<input type="number" name="zipcode" id="zipcode" placeholder="Zip code"><p id="zip-message">
 					</label>
 				</div>
 				</div>
@@ -100,7 +100,7 @@ font-size:1em;
 		</div>
 		<div class="right">
 			<h3>PAYMENT</h3>
-			<form>
+			<form action="booking_action.php" method="POST">
 				Accepted Card <br>
 				<img src="image/card1.png" width="100">
 				<img src="image/card2.png" width="50">

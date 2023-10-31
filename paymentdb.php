@@ -5,9 +5,10 @@ $PASSWORD='';
 $DATABSE='payment_booking';
 
 
-$con=mysqli_connect($HOSTNAME,$USERNAME,$PASSWORD,$DATABSE);
-if(!$con){
-    die(mysqli_error($con));
+$conn = new mysqli($HOSTNAME, $USERNAME, $PASSWORD, $DATABSE);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
 
