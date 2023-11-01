@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Braces</title>
-
     <link rel="stylesheet" href="services.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">   
 </head>
@@ -22,10 +20,10 @@
     <div class="image">
         <img src="home-img.svg" alt="">
     </div>
-
     <div class="content">
         <h3 style="white-space: nowrap;">Kids Dentistry</h3>
 </section>
+
 <section class="heading">
     <img src="image/kidsdentistry.jpg" style="border-color:#16a085;">
     <ul class="content" style="color:#16a085">
@@ -37,6 +35,7 @@
         <button class="read-more-btn" style="background-color:#16a085"><a href="./index.php" style="color: aliceblue;">Back to Home</a></button>
     </ul>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -80,6 +79,5 @@
             <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i> Pinterest </a>                               
         </div>
     </div>
-
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>

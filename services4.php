@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Braces</title>
-
     <link rel="stylesheet" href="services.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
 </head>
@@ -21,10 +20,10 @@
     <div class="image">
         <img src="image/home-img.svg" alt="">
     </div>
-
     <div class="content">
         <h3 style="white-space: nowrap;">Dental Implants</h3>
 </section>
+
 <section class="heading">
     <img src="image/dentalimplant.jpg">
     <ul class="content">
@@ -34,6 +33,7 @@
         <button class="read-more-btn" style="color: aliceblue;"><a href="./index.php" style="color: aliceblue;">Back to Home</a></button>
     </ul>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">

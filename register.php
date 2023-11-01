@@ -49,7 +49,6 @@ if(trim($_POST['confirm_password'])){
     $password_err="Passwords should match";
 }
 
-
 //If there were no errors, go ahead and insert into the database
 if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
     $sql="INSERT INTO users (username,password) VALUES (?, ?)";
@@ -74,10 +73,6 @@ if(empty($username_err) && empty($password_err) && empty($confirm_password_err))
 mysqli_close($conn);
 }
 ?>
-
-
-
-
 
 <!doctype html>
 <html lang="en">
@@ -111,9 +106,6 @@ mysqli_close($conn);
       <li class="nav-item">
         <a class="nav-link" href="logout.php">Logout</a>
       </li>
-
-      
-     
     </ul>
   </div>
 </nav>

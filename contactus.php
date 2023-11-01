@@ -5,41 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="contactstyle.css">
-    
+    <link rel="stylesheet" href="contactstyle.css">   
 </head>
 <body>
 <!--footer section starts-->
 <header class="header">
-        <a href="#" class="logo">
-           
+        <a href="#" class="logo">   
         <i class="fas fa-dental"></i> PerfectSmile </a>
-    
         <nav class="navbar">
             <ul>
-            <li><a href="./index.php">Home</a></li>
-            <li><a href="./our.services.php">Services</a></li>
-            <li><a href="./booknow.php">Book Online</a></li>
-            <li><a href="./membership.php">Membership plan</a></li>
-            <li><a href="./cr.php">Career</a></li>
-            <li><a href="./aboutus.php">About us</a></li>
-            <li><a href="./login.php" class="button">Login</a></li>
-            <!-- <a href="./Account.php" class="scroll">Account -->
-                <!-- <p> Welcome
-                    <div class="menu">
-                    <?php echo $_SESSION['email'];?>
-                    </div> -->
-                <!-- </p> -->
-            <!-- </a> -->
-            <li><a href="./logout.php" class="button1">Logout</a></li>   
-        </ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./our.services.php">Services</a></li>
+                <li><a href="./booknow.php">Book Online</a></li>
+                <li><a href="./membership.php">Membership plan</a></li>
+                <li><a href="./cr.php">Career</a></li>
+                <li><a href="./aboutus.php">About us</a></li>
+                <li><a href="./login.php" class="button">Login</a></li>
+                <!-- <a href="./Account.php" class="scroll">Account -->
+                    <!-- <p> Welcome
+                        <div class="menu">
+                        <?php echo $_SESSION['email'];?>
+                        </div> -->
+                    <!-- </p> -->
+                <!-- </a> -->
+                <li><a href="./logout.php" class="button1">Logout</a></li>   
+            </ul>
         </nav>    
             <div id="menu-btn" class="fas fa-bar"></div>    
     </header>
 
     <section class="home" id="home">
     <div class="image">
-    <img src="image/pl.png">
+        <img src="image/pl.png">
     </div>
     <div class="content">
         <h3>Perfect Smile</h3>
@@ -47,6 +44,7 @@
         <a href="contactus.php" class="btn"> Contact us </a>
     </div>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -93,12 +91,7 @@
 
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
-
 <!--footer section ends-->
-
-    
-
-
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

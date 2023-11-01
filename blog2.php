@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Braces</title>
-
     <link rel="stylesheet" href="blog.css">    
 </head>
 <body>
@@ -18,6 +17,7 @@
         <h3>How to Choose the Right Toothbrush and Toothpaste</h3>
         <h6>by Mike - DMD,Orthodontist</h6>
 </section>
+
 <section class="heading">
     <img src="blog2.jpg">
     <div class="content">
@@ -51,6 +51,7 @@
         <button class="read-more-btn" style="color: aliceblue;"><a href="index.php" style="color: aliceblue;">Back to Home</a></button>
     </div>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -94,6 +95,7 @@
             <a href="https://www.pinterest.com"> <i class="fas fa-Pinterest"></i> Pinterest </a>                               
         </div>
     </div>
-
     <div class="credit"> created by <span> Jorim Technology Solutions Pvt Ltd </span> | all rights reserved </div>
 </section>
+</body>
+</html>

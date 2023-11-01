@@ -81,7 +81,22 @@ section:nth-child(even){
     background: #fff;
     margin-left: 1rem;
 }
+.button {
+    display: inline-block;
+    padding: 2px 15px 2px; /* Adjust padding as needed */
+    background-color: #a9b5c2; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.button:hover {
+    background-color: #19eec3; /* Change the background color on hover */
+}
 .header{
     padding: 2rem;
     position: fixed;
@@ -667,3 +682,51 @@ section:nth-child(even){
 .navbar .button1:hover {
     background-color: #f21909; /* Change the background color on hover */
 }
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 5rem;
+    right: 3rem;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    z-index: 4;
+    width: 4%;
+    text-align: center;
+    height: 45px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 27px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .go-top i {
+    color:#16a085;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .go-top i:hover{
+    color:#fff;
+  }
+  .go-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+  }
+ 
+  
+  .go-top:hover {
+    background: var(--green);
+  
+  }

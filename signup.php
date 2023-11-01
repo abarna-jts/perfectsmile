@@ -113,8 +113,6 @@ var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 var passwordInput = document.getElementById('pass');
 
-
-
 fname.addEventListener('input', function () {
           // Get the value of the input
           var x = fname.value;
@@ -133,9 +131,7 @@ fname.addEventListener('input', function () {
               // Clear the error message if the length is valid
               text= "valid input";
               document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
-          }
-        
-          
+          }   
       });
 
       lname.addEventListener('input', function () {
@@ -157,10 +153,7 @@ fname.addEventListener('input', function () {
             text= "valid input";
             document.getElementById("lname-message").innerHTML = '<p class="valid-message">' + text + '</p>';
         }
-      
-        
     });
-
 
       email.addEventListener('input',function(){
         var z=email.value;
@@ -173,10 +166,7 @@ fname.addEventListener('input', function () {
         text = "Valid email";
         document.getElementById("e-message").innerHTML = '<p class="valid-message">' + text + '</p>';
     }
-    
       });
-
- 
 
       number.addEventListener('input',function(){
         var m=number.value;
@@ -192,7 +182,6 @@ fname.addEventListener('input', function () {
         text = "Valid email";
         document.getElementById("contact-message").innerHTML = '<p class="valid-message">' + text + '</p>';
     }
-    
       });
     
       passwordInput.addEventListener('input', function () {
@@ -218,11 +207,9 @@ fname.addEventListener('input', function () {
     } else {
         text = "Password is valid.";
     }
-
     // Display the error message or valid message
     document.getElementById("password-message").innerHTML = '<p class="' + (text === "Password is valid." ? "valid-message" : "error-message") + '">' + text + '</p';
 });
       </script>
-
 </body>
 </html>

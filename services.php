@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Braces</title>
-
     <link rel="stylesheet" href="./services2.css">    
 </head>
 <body>
@@ -17,10 +16,11 @@
     <div class="image">
         <img src="image/home-img.svg" alt="">
     </div>
-
     <div class="content">
         <h3>Dental Braces</h3>
+    </div>
 </section>
+
 <section class="heading">
     <img src="dentalbraces.jpg">
     <ul class="content">

@@ -246,6 +246,7 @@ section:nth-child(even){
     margin-left: 2.5rem;
     transition: transform 0.3s; 
     
+    
 }
 .header .navbar ul{
     list-style: none;
@@ -496,26 +497,15 @@ section:nth-child(even){
     color: #fff;
     box-shadow: var(--box-shadow);
 }
-.book .row {
+.book .row{
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh; /* You can use a percentage or fixed height as needed */
     flex-wrap: wrap;
     gap: 2rem;
-    width: 50%;
-    margin-left: 24%;
 }
-.book .row .booking{
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin-left: 14%;
-    width:70%;
-    height:5rem;
-    box-shadow: var(--box-shadow);
-    color: #f3f8f2;
-    background-color: #16a085;
-    box-shadow: var(--box-shadow);
+
+.book .row .content{
+    flex:1 1 45rem;
 }
 
 /* .book .row .image img{
@@ -540,7 +530,7 @@ section:nth-child(even){
 
 .book .row form .box{
     width: 100%;
-    margin: 2.5rem 0;
+    margin: 3.5rem 0;
     border-radius: .5rem;
     border: var(--border);
     font-size:large;
@@ -548,10 +538,33 @@ section:nth-child(even){
     text-transform: none;
     padding:1rem;
 }
-.book .content p{
+.row .content p{
     font-size: 2rem;
     width: 100%;
-    margin-bottom: 2%;
+}
+.row .box h3{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: #16a085;
+    text-decoration-skip: ink;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.row .box a{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.row .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.box a:hover i{
+    padding-right: 2rem;
+    color: rgb(66, 125, 86); 
 }
 
 .book .row form .btn{
@@ -826,7 +839,54 @@ section:nth-child(even){
 .blog1 img{
     background-size: 100px;
 }
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 5rem;
+    right: 3rem;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    z-index: 4;
+    width: 4%;
+    text-align: center;
+    height: 45px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 27px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
 
+  
+  .go-top i {
+    color:#16a085;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .go-top i:hover{
+    color:#fff;
+  }
+  .go-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+  }
+ 
+  
+  .go-top:hover {
+    background: var(--green);
+  
+  }
 
 
 

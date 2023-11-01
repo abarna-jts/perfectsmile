@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
     <title>Book Now</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
 #form-group .error p{
@@ -37,33 +38,34 @@ color: green;
 </style>
 </head>
 <body>
-
+<!-- navbar-heading start -->
 <header class="header">
-        <a href="#" class="logo">
-           
-        <i class="fas fa-dental"></i> PerfectSmile </a>
-    
+    <a href="#" class="logo">   
+    <i class="fa-solid fa-tooth"></i> PerfectSmile </a>
         <nav class="navbar">
             <ul>
-            <li><a href="./index.php">Home</a></li>
-            <li><a href="./our.services.php">Services</a></li>
-            <li><a href="./booknow.php">Book Online</a></li>
-            <li><a href="./membership.php">Membership plan</a></li>
-            <li><a href="./cr.php">Career</a></li>
-            <li><a href="./aboutus.php">About us</a></li>
-            <li><a href="./login.php" class="button">Login</a></li>
-            <!-- <a href="./Account.php" class="scroll">Account -->
-                <!-- <p> Welcome
-                    <div class="menu">
-                    <?php echo $_SESSION['email'];?>
-                    </div> -->
-                <!-- </p> -->
-            <!-- </a> -->
-            <li><a href="./logout.php" class="button1">Logout</a></li>   
-        </ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./our.services.php">Services</a></li>
+                <li><a href="./booknow.php">Book Online</a></li>
+                <li><a href="./membership.php">Membership plan</a></li>
+                <li><a href="./cr.php">Career</a></li>
+                <li><a href="./aboutus.php">About us</a></li>
+                <li><a href="./login.php" class="button">Login</a></li>
+                <!-- <a href="./Account.php" class="scroll">Account -->
+                    <!-- <p> Welcome
+                        <div class="menu">
+                        <?php echo $_SESSION['email'];?>
+                        </div> -->
+                    <!-- </p> -->
+                <!-- </a> -->
+                <li><a href="./logout.php" class="button1">Logout</a></li>   
+            </ul>
         </nav>    
             <div id="menu-btn" class="fas fa-bar"></div>    
-    </header>
+</header>
+<!-- navbar-heading End -->
+
+<!-- home section start -->
     <section class="home" id="home">
     <div class="image">
     <img src="image/pl.png">
@@ -74,25 +76,32 @@ color: green;
         <a href="./contactus.php" class="btn"> Contact us </a>
     </div>
 </section>
+<!-- home section End -->
 
-
+<!--booking section Start-->
 <section class="book" id="book">
     <h1 class="heading"> <span>book</span> now </h1>
+    <div class="row">
+        <form action="index.php" id="form-group" method="post">
+            <h3 class="booking">Book Appointment</h3>
+            <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
+            <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
+            <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
+            <input type="date" id="date" class="box"><p id="date-message"></p>
+            <input type="submit" placeholder="book now" class="btn">
+        </form>
         <div class="content">
             <p>Ready to schedule your next dental appointment? Look no further! Booking with us is as easy as saying 'cheese' for a smile.</p>
-        </div> 
-        <div class="row">
-            <form action="index.php" id="form-group" method="post">
-            <h3 class="booking">Book Appointment</h3>
-                <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
-                <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
-                <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
-                <input type="message" id="email" placeholder="your Message" class="box"><p id="m-message"></p>
-                <input type="date" id="date" class="box"><p id="date-message"></p>
-                <input type="submit" placeholder="book now" class="btn">
-            </form>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="tel:7305686253"> <i class="fas fa-phone"></i> 7305686253 </a>
+                <a href="tel:9840734794"> <i class="fas fa-phone"></i> 9840734794 </a>
+                <a href="mailto:jdcare1997@gmail.com"> <i class="fas fa-envelope"></i> jdcare1997@gmail.com </a>
+                <a href="mailto:perfectsmile1029@gmail.com"> <i class="fas fa-envelope"></i> perfectsmile1029@gmail.com </a> 
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India - 600075 </a>    
+            </div>
         </div>
-     
+    </div>
 </section>
 <!--booking section ends-->
 
@@ -144,10 +153,15 @@ color: green;
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
 <!--footer section ends-->
+
+<!-- up-arrow start -->
+<div class="go-top active"><i class="fa-solid fa-arrow-up"></i></div>
+<!-- up-arrow Ends -->
+
+<!-- zooming element Start -->
 <script>
 // Get all the review box elements
 const reviewBoxes = document.querySelectorAll('.box');
-
 // Function to check if an element is in the viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -170,13 +184,28 @@ function animateOnScroll() {
 
 // Listen for the scroll event to trigger animations
 window.addEventListener('scroll', animateOnScroll);
-
 // Initial check to see if any elements are already in the viewport
 animateOnScroll();
-
 </script>
-    
+<!-- zooming element ends -->
 
+<!-- Go-Top Start -->
+<script>
+    $(function(){
+    // Scroll Event
+    $(window).on('scroll', function(){
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 500) $('.go-top').addClass('active');
+        if (scrolled < 500) $('.go-top').removeClass('active');
+    });  
+    // Click Event
+    $('.go-top').on('click', function() {
+        $("html, body").animate({ scrollTop: "0" },  500);
+    });
+    
+});
+    </script>   
+<!-- Go-top Ends -->
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

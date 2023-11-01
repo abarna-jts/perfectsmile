@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Braces</title>
-
     <link rel="stylesheet" href="blog.css">    
 </head>
 <body>
@@ -17,7 +16,9 @@
     <div class="content">
         <h3>Teeth Whitening: Myths vs. Facts</h3>
         <h6>by Sakura - DMD,Orthodontist</h6>
+    </div>
 </section>
+
 <section class="heading">
     <img src="blog1.jpg">
     <div class="content">
@@ -38,6 +39,7 @@
         <button class="read-more-btn" style="color: aliceblue;"><a href="index.php" style="color: aliceblue;">Back to Home</a></button>
     </div>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -81,6 +83,7 @@
             <a href="https://www.pinterest.com"> <i class="fas fa-Pinterest"></i> Pinterest </a>                               
         </div>
     </div>
-
     <div class="credit"> created by <span> Jorim Technology Solutions Pvt Ltd </span> | all rights reserved </div>
 </section>
+</body>
+</html>

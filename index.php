@@ -22,8 +22,7 @@ if(!isset($_SESSION['email'])){
 }
 #form-group p{
     float:left;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 #form-group{
     margin-bottom:10px;
@@ -31,7 +30,6 @@ if(!isset($_SESSION['email'])){
 .error-message {
 color: red;
 }
-
 .valid-message {
 color: green;
 }
@@ -39,16 +37,15 @@ color: green;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Smile</title>
-
-    <link rel="stylesheet" href="./style.css">   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
 </head>
 <body>
+    <!-- navbar heading start-->
 <header class="header">
-        <a href="#" class="logo">
-           
-        <i class="fas fa-dental"></i> PerfectSmile </a>
-    
+        <a href="#" class="logo">       
+        <i class="fa-solid fa-tooth"></i> PerfectSmile </a> 
         <nav class="navbar">
             <ul>
             <li><a href="./index.php">Home</a></li>
@@ -70,9 +67,12 @@ color: green;
         </nav>    
             <div id="menu-btn" class="fas fa-bar"></div>    
     </header>
+    <!-- navbar-heading close -->
+
+<!-- home section start -->
 <section class="home" id="home">
     <div class="image">
-    <img src="image/pl.png">
+        <img src="image/pl.png">
     </div>
     <div class="content">
         <h3>Perfect Smile</h3>
@@ -80,7 +80,6 @@ color: green;
         <a href="contactus.php" class="btn"> Contact us </a>
     </div>
 </section>
-
 <!--home section ends-->
 
 <!--icons section starts-->
@@ -202,7 +201,6 @@ color: green;
         <div class="content">
             <h3>We take care of your healthy smile!!</h3>
             <p>At <span>Perfect Smile</span>, we're not just about smiles; we're about creating confidence, one smile at a time. Our mission is to transform dental care into an experience that you actually look forward to. We're a team of passionate professionals dedicated to delivering the best in oral health and aesthetics.</p>
-            
             <a href="./aboutus.php" class="btn"> Read More </a>
         </div>
     </div>
@@ -291,20 +289,27 @@ color: green;
 <!--booking section starts-->
 <section class="book" id="book">
     <h1 class="heading"> <span>book</span> now </h1>
+    <div class="row">
+        <form action="index.php" id="form-group" method="post">
+            <h3 class="booking">Book Appointment</h3>
+            <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
+            <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
+            <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
+            <input type="date" id="date" class="box"><p id="date-message"></p>
+            <input type="submit" placeholder="book now" class="btn">
+        </form>
         <div class="content">
             <p>Ready to schedule your next dental appointment? Look no further! Booking with us is as easy as saying 'cheese' for a smile.</p>
-        </div> 
-        <div class="row">
-        <form action="index.php" id="form-group" method="post">
-                <h3 class="booking">Book Appointment</h3>
-                <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
-                <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
-                <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
-                <input type="date" id="date" class="box"><p id="date-message"></p>
-                <input type="submit" placeholder="book now" class="btn">
-            </form>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="tel:7305686253"> <i class="fas fa-phone"></i> 7305686253 </a>
+                <a href="tel:9840734794"> <i class="fas fa-phone"></i> 9840734794 </a>
+                <a href="mailto:jdcare1997@gmail.com"> <i class="fas fa-envelope"></i> jdcare1997@gmail.com </a>
+                <a href="mailto:perfectsmile1029@gmail.com"> <i class="fas fa-envelope"></i> perfectsmile1029@gmail.com </a> 
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India - 600075 </a>    
+            </div>
         </div>
-     
+    </div>
 </section>
 <!--booking section ends-->
 
@@ -312,7 +317,6 @@ color: green;
 <section class="review" id="review">
     <h1 class="heading"> client's <span> review </span></h1>
     <div class="box-container" reveal>
-
         <div class="box">
             <img src="image/client2.jpg" alt="">
             <h3>John D</h3>
@@ -351,7 +355,6 @@ color: green;
             </div>
             <p class="text">My kids love going to the dentist, thanks to the fantastic pediatric team at [Clinic Name]. They make the experience fun and educational. As a parent, I couldn't ask for a better place for my family's dental needs.</p>
         </div>
-
     </div>
 </section>
 <!--review section ends-->
@@ -372,7 +375,7 @@ color: green;
                 </div>
                 <h3>Teeth Whitening: Myths vs. Facts</h3>
                 <p>Unlock the secrets to a brighter smile as we debunk common myths and reveal the science-backed facts about teeth whitening. Get ready to smile with confidence as we separate fiction from the truth, and discover the real path to a dazzling, pearly-white grin!</p>
-                <a href="blog1.php" style="margin-top:7.4rem;" class="btn3"> learn more </a>
+                <a href="blog1.php" style="margin-top:7.4rem;" class="btn3"> Learn More </a>
             </div>
         </div>
 
@@ -387,7 +390,7 @@ color: green;
                 </div>
                 <h3>How to Choose the Right Toothbrush and Toothpaste</h3>
                 <p>Navigate the world of dental care like a pro! Discover the insider's guide to selecting the perfect toothbrush and toothpaste, ensuring your daily routine leads to a healthier, brighter smile. Get ready to make the best choices for your oral hygiene journey!</p>
-                <a href="blog2.php" class="btn2"> learn more </a>
+                <a href="blog2.php" class="btn2"> Learn More </a>
             </div>
         </div>
 
@@ -402,10 +405,9 @@ color: green;
                 </div>
                 <h3>The Role of Nutrition in Maintaining Healthy Teeth and Gums</h3>
                 <p>Fuel your smile from the inside out! Explore the vital connection between nutrition and your dental well-being, and uncover the mouthwatering secrets to maintaining healthy teeth and gums. Get ready to savor the path to a radiant, confident grin!</p>
-                <a href="blog3.php" class="btn3"> learn more</a>
+                <a href="blog3.php" class="btn3"> Learn More</a>
             </div>
         </div>
-
     </div>
 </section>
 <!--blogs section ends-->
@@ -454,16 +456,18 @@ color: green;
             <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i> Pinterest </a>                               
         </div>
     </div>
-
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
-
-
 <!--footer section ends-->
+
+<!--up-arrow-->
+<div class="go-top active"><i class="fa-solid fa-arrow-up"></i></div>
+<!-- up-arrow close -->
+
+<!-- zooming element start -->
 <script>
 // Get all the review box elements
 const reviewBoxes = document.querySelectorAll('.box');
-
 // Function to check if an element is in the viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -474,7 +478,6 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-
 // Function to add the animated class to elements in the viewport
 function animateOnScroll() {
     reviewBoxes.forEach((box) => {
@@ -483,17 +486,30 @@ function animateOnScroll() {
         }
     });
 }
-
 // Listen for the scroll event to trigger animations
 window.addEventListener('scroll', animateOnScroll);
-
 // Initial check to see if any elements are already in the viewport
 animateOnScroll();
-
 </script>
+<!-- zooming element End -->
 
-
+<!-- Go-Top Start -->
+<script>
+    $(function(){
+    // Scroll Event
+    $(window).on('scroll', function(){
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 500) $('.go-top').addClass('active');
+        if (scrolled < 500) $('.go-top').removeClass('active');
+    });  
+    // Click Event
+    $('.go-top').on('click', function() {
+        $("html, body").animate({ scrollTop: "0" },  500);
+    });
     
+});
+    </script> 
+<!-- Go-Top Ends -->
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

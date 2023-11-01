@@ -21,8 +21,7 @@
 }
 #form-group p{
     float:left;
-    font-size: 1.9rem;
-    
+    font-size: 1.9rem;   
 }
 #form-group{
     margin-bottom:10px;
@@ -31,7 +30,6 @@
 color: red;
 font-size:1.5em;
 }
-
 .valid-message {
 color: green;
 font-size:1.5em;
@@ -45,36 +43,37 @@ font-size:1.5em;
   font-size: 14px;
   margin-top: 10px;
 }
-
 </style>
 </head>
 <body>
     <!-- NAVBAR HEADER -->
 <header class="header">
-<a href="cr.php">
-<div class="long-arrow-left"></div>
-</a>
+    <a href="cr.php">
+    <div class="long-arrow-left"></div>
+    </a>
         <a href="#" class="logo">
         <i class="fas fa-dental"></i> PerfectSmile </a>
         <nav class="navbar">
             <ul>
-            <li><a href="./index.php">Home</a></li>
-            <li><a href="./our.services.php">Services</a></li>
-            <li><a href="./booknow.php">Book Online</a></li>
-            <li><a href="./membership.php">Membership plan</a></li>
-            <li><a href="./cr.php">Career</a></li>
-            <li><a href="./aboutus.php">About us</a></li>
-            <li><a href="./logout.php" class="button1">Logout</a></li>   
-        </ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./our.services.php">Services</a></li>
+                <li><a href="./booknow.php">Book Online</a></li>
+                <li><a href="./membership.php">Membership plan</a></li>
+                <li><a href="./cr.php">Career</a></li>
+                <li><a href="./aboutus.php">About us</a></li>
+                <li><a href="./logout.php" class="button1">Logout</a></li>   
+            </ul>
         </nav>    
             <div id="menu-btn" class="fas fa-bar"></div>    
-    </header>
-<!-- HEADER FOOTER -->
+</header>
+<!-- NAVBAR HEADER END -->
+
+<!-- HEADER FOOTER START-->
 <section class="home" id="home">
     <div class="content">
         <h3>Dental Surgeon</h3>
         <p>Perfect Smile</p>
-         <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i>  </a>
+            <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i>  </a>
             <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i>  </a>
             <a href="https://wa.me/7305686253"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
@@ -82,42 +81,35 @@ font-size:1.5em;
             <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i>  </a>
     </div>
 </section>
+<!-- HEADER FOOTER END-->
 
 <!-- JOB DESCRIPTION  -->
- 
-
-<section class="description" id="description">
-    
+<section class="description" id="description">   
     <button id="showJobDescription" class="tablink" style="margin-left:28rem;">Show Job Description</button>
     <button id="showAboutCompany" class="tablink">Show About Company</button>
     <br>
     <br><br>
     <br>
     <br>
-
+    <!-- Show Job Description Start -->
         <div class="box1" id="job">
-            
-            
             <h2>Dental Surgeon</h2>
             <h1>Perfect Smile Clinic</h1>
-            <span class="fa fa-star" style="color:orange;"></span>
-            <span class="fa fa-star" style="color:orange;"></span>
-            <span class="fa fa-star" style="color:orange;"></span>
-            <span class="fa fa-star" style="color:orange;"></span>
-            <span class="fa fa-star"></span>
+                <span class="fa fa-star" style="color:orange;"></span>
+                <span class="fa fa-star" style="color:orange;"></span>
+                <span class="fa fa-star" style="color:orange;"></span>
+                <span class="fa fa-star" style="color:orange;"></span>
+                <span class="fa fa-star"></span>
             <div class="about">
-            <i class=" fa fa-user"></i>0-2 years  </a>
-            <i class="fa-solid fa-user-plus"></i>1 Openings  </a>
-            <i class="fa fa-inr"></i>Not Disclosed  </a>
-            <i class="fa fa-map-marker"></i>Chennai  </a>
+                <i class=" fa fa-user"></i>0-2 years  </a>
+                <i class="fa-solid fa-user-plus"></i>1 Openings  </a>
+                <i class="fa fa-inr"></i>Not Disclosed  </a>
+                <i class="fa fa-map-marker"></i>Chennai  </a>
             </div>
             <a href="#formid">
             <button class="btn" id="applyButton">Apply Now </button><br>
             <a>
-        
-       
             <br><br>
-           
             <div class="job-description">
                 <h2>Job Description:</h2>
                 <p>A Dental Surgeon plays a critical role in promoting and maintaining oral health, preventing dental issues, and ensuring the well-being of their patients. Their job requires a combination of clinical expertise, communication skills, and ethical conduct to provide comprehensive dental care.</p><br>
@@ -141,9 +133,10 @@ font-size:1.5em;
                     <li>Willingness to adapt to changing work conditions and respond to diverse patient needs.</li>
                 </ul>  
             </div>        
-
-</div>
         </div>
+        <!-- Show Job Description End -->
+
+        <!-- About Company Start -->
         <div class="box2" id="about">
             <h2>About Company</h2>
             <br>
@@ -155,7 +148,6 @@ font-size:1.5em;
             <br>
             <br>
             <br>
-
             We take care of your healthy smile!!
             At Perfect Smile, we're not just about smiles; we're about creating confidence, one smile at a time. Our mission is to transform dental care into an experience that you actually look forward to. We're a team of passionate professionals dedicated to delivering the best in oral health and aesthetics.
             <br>
@@ -164,96 +156,91 @@ font-size:1.5em;
             <p class="det">
             <br>
             <br>
-            
             <a href="tel:7305686253" style="color:#000000;"> <i class="fas fa-phone"></i> 7305686253 </a><br>
             <a href="tel:9840734794" style="color:#000000;"> <i class="fas fa-phone"></i> 9840734794 </a><br>
             <a href="mailto:jdcare1997@gmail.com" style="color:#000000;"> <i class="fas fa-envelope"></i> jdcare1997@gmail.com </a><br>
             <a href="mailto:perfectsmile1029@gmail.com" style="color:#000000;"> <i class="fas fa-envelope"></i> perfectsmile1029@gmail.com </a><br>
             <a href="#" style="color:#000000;"> <i class="fas fa-map-marker-alt" style="color:#000000;"></i> Chennai, India - 600075 </a><br>
-</p>
-   
+            </p>
         </div>
     </section>
+    <!-- About Company Start -->
 
-    <section class="form" id="formid" >
-        <br>
+    <!-- Job Application Form Start -->
+<section class="form" id="formid" >
+    <br>
     <h2 class="heading">Application Form</h2><br>
     <br>
     <div class="form-details">
-    <form class="myform" method="POST" action="process.php">
-    <h2>Personal Details</h2>
-    <hr class="styled-line">
-    <div>
-    <label for="fname" required >First Name <span class="required">*</span></label><br>
-    <input type="text" id="fname" name="fname" required><p id="name-message"></p><br>
+        <form class="myform" method="POST" action="process.php">
+            <h2>Personal Details</h2>
+            <hr class="styled-line">
+            <div>
+                <label for="fname" required >First Name <span class="required">*</span></label><br>
+                <input type="text" id="fname" name="fname" required><p id="name-message"></p><br>
+            </div>
+            <div>
+                <label for="lname" >Last Name</label><br>
+                <input type="text" id="lname" name="lname"><p id="lname-message"></p><br>
+            </div>
+            <div>
+                <label for="email">Email <span class="required">*</span></label><br>
+                <input type="email" id="email" name="email" required><p id="e-message"><br>
+            </div>
+            <div>
+                <label for="contact">Contact <span class="required">*</span></label><br>
+                <input type="number"  id="contact" name="contact" required><p id="contact-message"><br>
+            </div>
+            <div>
+                <label for="gender">Gender <span class="required">*</span></label><br>
+                <select id="gender" name="gender" required>
+                    <option>Choose gender..</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <br>
+                <label for="course">Course <span class="required">*</span></label><br>
+                <select id="gender" name="course" required>
+                    <option>Choose Course..</option>
+                    <option value="Bsc.Nursing">Bsc Nursing</option>
+                    <option value="BDS">BDS</option>
+                    <option value="MDS">MDS</option>
+                </select>
+            </div>
+            <div><br>
+                <label for="clgname">College Name <span class="required">*</span></label><br>
+                <input type="text" id="clgname" name="clgname" required><br>
+            </div>
+            <div><br>
+                <label for="year" autocomplete="year">Year of Passing <span class="required">*</span></label><br>
+                <select id="gender" name="year" required>
+                    <option>Choose year..</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="Below 2020">Below 2020</option>
+                </select>
+            </div>
+            <div><br>
+                <label for="location">Current Location <span class="required">*</span></label><br>
+                <input type="text" id="location" name="location" required><br>
+            </div>
+            <div id="formMessage" style="color: red; font-size:1.6em;"></div>      
+            <button class="btn" id="openModal" style="margin-left:25%;">Submit</button><br>
+            <a href="cr.php" class="btn" style="float:right; margin-right:43%; margin-top:-5.5%;">Cancel </a>
+        </form>
     </div>
-    <div>
-    <label for="lname" >Last Name</label><br>
-    <input type="text" id="lname" name="lname"><p id="lname-message"></p><br>
-    </div>
-    <div>
-    <label for="email">Email <span class="required">*</span></label><br>
-    <input type="email" id="email" name="email" required><p id="e-message"><br>
-    </div>
-    <div>
-    <label for="contact">Contact <span class="required">*</span></label><br>
-    <input type="number"  id="contact" name="contact" required><p id="contact-message"><br>
-    </div>
-    <div>
-    <label for="gender">Gender <span class="required">*</span></label><br>
-    <select id="gender" name="gender" required>
-        <option>Choose gender..</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-    </select>
-    </div>
-    <div>
-        <br>
-    <label for="course">Course <span class="required">*</span></label><br>
-    <select id="gender" name="course" required>
-    <option>Choose Course..</option>
-        <option value="Bsc.Nursing">Bsc Nursing</option>
-        <option value="BDS">BDS</option>
-        <option value="MDS">MDS</option>
-        
-    </select>
-    </div>
-    <div><br>
-    <label for="clgname">College Name <span class="required">*</span></label><br>
-    <input type="text" id="clgname" name="clgname" required><br>
-    </div>
-    <div><br>
-    <label for="year" autocomplete="year">Year of Passing <span class="required">*</span></label><br>
-    <select id="gender" name="year" required>
-    <option>Choose year..</option>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="Below 2020">Below 2020</option>
-    </select>
-    </div>
-    <div><br>
-    <label for="location">Current Location <span class="required">*</span></label><br>
-    <input type="text" id="location" name="location" required><br>
-    </div>
-    <div id="formMessage" style="color: red; font-size:1.6em;"></div>
-            
-<button class="btn" id="openModal" style="margin-left:25%;">Submit</button><br>
-<a href="cr.php" class="btn" style="float:right; margin-right:43%; margin-top:-5.5%;">Cancel </a>
-</form>
-
-</div>
-
 </section>
-
+<!-- Job Application Form End -->
+<!-- Related Jobs Start -->
 <section class="related-job">
 <h3>Related Jobs</h3>
 <div class="job-list">
-    
     <br>
-
     <div class="table1" style="width: 60%;">
       <h2 class="job-title">BDS Doctor</h2>
       <img src="image/doc.png">
@@ -280,9 +267,9 @@ font-size:1.5em;
       <a href="front.php" class="btn">Apply Now </a>
     </div>
 </div>
-
 </section>
-
+<!-- Related Jobs End -->
+<!-- footer Section -->
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -329,8 +316,10 @@ font-size:1.5em;
 
     <div class="credit"> Created by <a href="https://jorimts.com/"> Jorim Technology Solutions Pvt Ltd</a> | all rights reserved </div>
 </section>
+<!-- Footer Section End -->
 
+<!-- Validation js -->
 <script src="crvalid.js"></script>
-   
+<!-- Validation js -->
 </body>
 </html>

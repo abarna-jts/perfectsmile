@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gum Therapy</title>
-
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">     
 </head>
 <body>
-
 <header class="header">
         <div id="menu-btn" class="fas fa-bar"></div>    
 </header>
@@ -21,21 +19,22 @@
     <div class="image">
         <img src="image/home-img.svg" alt="">
     </div>
-
     <div class="content">
         <h3 style="white-space: nowrap;">Gum Therapy</h3>
 </section>
+
 <section class="heading">
     <img src="image/Gum Therapy.jpg">
     <ul class="content">
         <li>Gum therapy, also known as periodontal therapy or periodontal treatment, is a crucial aspect of oral healthcare aimed at preventing and treating gum disease.</li>
-        
+    
         <li>Gum disease, often characterized by inflammation, infection, and damage to the supporting structures of the teeth, can lead to tooth loss if left untreated.</li>
 
         <li>Gum therapy typically involves a combination of non-surgical and surgical interventions, depending on the severity of the condition.</li>
         <button class="read-more-btn" style="color: aliceblue;"><a href="./index.php" style="color: aliceblue;">Back to Home</a></button>
     </ul>
 </section>
+
 <section class="footer">
     <div class="box-container">
         <div class="box">

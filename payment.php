@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,8 +20,7 @@
 }
 #form-group p{
     float:left;
-    font-size: 0.76rem;
-    
+    font-size: 0.76rem;  
 }
 #form-group{
     margin-bottom:10px;
@@ -33,7 +29,6 @@
 color: red;
 font-size:0.3em;
 }
-
 .valid-message {
 color: green;
 font-size:1em;
@@ -47,7 +42,6 @@ font-size:1em;
   font-size: 14px;
   margin-top: 10px;
 }
-
 </style>
 </head>
 <body>
@@ -57,44 +51,43 @@ font-size:1em;
 			<h3>BILLING ADDRESS</h3>
 			<form id="form-group" action="booking_action.php" method="POST">
 				<div>
-				Full name
-				<input type="text" name="name" id="name" placeholder="Enter name"><br>
-				<p id="name-message">
+					Full name
+					<input type="text" name="name" id="name" placeholder="Enter name"><br>
+					<p id="name-message">
 				</div>
 				<div>
 					<br>
-				Email
-				<input type="text" name="email" id="email" placeholder="Enter email">
-				<p id="e-message">
+					Email
+					<input type="text" name="email" id="email" placeholder="Enter email">
+					<p id="e-message">
 				</div>
 				<div>
-				<br>
-				Address
-				<input type="text" name="address" id="address" placeholder="Enter address">
-				</div>
-				<div>
-				<br>
-				City
-				<input type="text" name="city" id="city" placeholder="Enter City"><br>
-				<div id="zip">
-					<label>
 					<br>
-						State
-						<select>
-							
-							<option>Choose State..</option>
-							<option>Rajasthan</option>
-							<option>TamilNadu</option>
-							<option>Uttar Pradesh</option>
-							<option>Madhya Pradesh</option>
-						</select>
-					</label>
+					Address
+					<input type="text" name="address" id="address" placeholder="Enter address">
+				</div>
+				<div>
+					<br>
+					City
+					<input type="text" name="city" id="city" placeholder="Enter City"><br>
+					<div id="zip">
 						<label>
-						<br>
-						Zip code
-						<input type="number" name="zipcode" id="zipcode" placeholder="Zip code"><p id="zip-message">
-					</label>
-				</div>
+							<br>
+							State
+							<select>	
+								<option>Choose State..</option>
+								<option>Rajasthan</option>
+								<option>TamilNadu</option>
+								<option>Uttar Pradesh</option>
+								<option>Madhya Pradesh</option>
+							</select>
+						</label>
+						<label>
+							<br>
+							Zip code
+							<input type="number" name="zipcode" id="zipcode" placeholder="Zip code"><p id="zip-message">
+						</label>
+					</div>
 				</div>
 			</form>
 		</div>
@@ -106,8 +99,8 @@ font-size:1em;
 				<img src="image/card2.png" width="50">
 				<br><br>
 				Credit card number
-			<input type="text" name="cardNumber" id="cardNumber" placeholder="Enter card number" oninput="formatCardNumber()">
-			<br>
+				<input type="text" name="cardNumber" id="cardNumber" placeholder="Enter card number" oninput="formatCardNumber()">
+				<br>
 				Exp month
 				<select>
 							<option>Choose Month..</option>
@@ -123,10 +116,10 @@ font-size:1em;
 							<option>October</option>
 							<option>November</option>
 							<option>December</option>
-						</select>
+				</select>
 				<div id="zip">
 					<label>
-					<br>
+						<br>
 						Exp year
 						<br>
 						<select>
@@ -137,25 +130,25 @@ font-size:1em;
 							<option>2025</option>
 						</select>
 					</label>
-						<label>
+					<label>
 						<br>
 						CVV
-						
 						<input type="number" name="cvv" id="cvv" placeholder="Enter CVV">
 						<p id="cvv-message"></p>
 					</label>
 				</div>
 			</form>
-			<input type="submit" name="" value="Proceed to Checkout">
+				<input type="submit" name="" value="Proceed to Checkout">
 		</div>
 	</div>
 </header>
+
+<!-- validation js -->
 <script>
 let name = document.getElementById("name");
 let email = document.getElementById("email");
 let zipcode = document.getElementById("zipcode");
-
-            
+    
         name.addEventListener('input', function () {
           // Get the value of the input
           var x = name.value;
@@ -175,8 +168,6 @@ let zipcode = document.getElementById("zipcode");
               text= "valid input";
               document.getElementById("name-message").innerHTML = '<p class="valid-message">' + text + '</p>';
           }
-        
-          
       });
 
       zipcode.addEventListener('input', function () {
@@ -197,16 +188,12 @@ let zipcode = document.getElementById("zipcode");
             // Clear the error message if the length is valid
             text= "valid input";
             document.getElementById("zip-message").innerHTML = '<p class="valid-message">' + text + '</p>';
-        }
-      
-        
+        }  
     });
-
 
       email.addEventListener('input',function(){
         var z=email.value;
         var text;
-
         if (!z.includes('@')) {
             text = "Email must contain '@' symbol";
             document.getElementById("e-message").innerHTML = '<p class="error-message">' + text + '</p>';
@@ -214,28 +201,26 @@ let zipcode = document.getElementById("zipcode");
         text = "Valid email";
         document.getElementById("e-message").innerHTML = '<p class="valid-message">' + text + '</p>';
     }
-    
-      }); </script>
+      });
+	   </script>
+
 	  <script>
         function formatCardNumber() {
             var cardNumber = document.getElementById("cardNumber");
             var formattedCardNumber = cardNumber.value.replace(/\D/g, ''); // Remove non-numeric characters
             var formatted = '';
-
 			if (formattedCardNumber.length > 12) {
                 formattedCardNumber = formattedCardNumber.slice(0, 12); // Limit to 12 digits
             }
-
             for (var i = 0; i < formattedCardNumber.length; i++) {
                 if (i > 0 && i % 4 === 0) {
                     formatted += ' '; // Add a space after every 4 digits
                 }
                 formatted += formattedCardNumber.charAt(i);
             }
-
             cardNumber.value = formatted;
         }
 		</script>
-		
+<!-- validation js -->
 </body>
 </html>

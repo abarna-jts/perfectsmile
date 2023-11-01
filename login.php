@@ -45,7 +45,6 @@ $invalid=0;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-
 <?php
 if($login){
     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -69,9 +68,6 @@ if($invalid){
   </div>';
 }
 ?>
-
-
-
     <div class="login">
         <h1>Sign In</h1>
         <form action="login.php" method="post">
