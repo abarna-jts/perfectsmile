@@ -46,7 +46,9 @@ font-size:1em;
 </head>
 <body>
 <header>
-	<div class="container">
+	<div class="container"><a href="membership.php">
+<div class="long-arrow-left"></div>
+</a>
 		<div class="left">
 			<h3>BILLING ADDRESS</h3>
 			<form id="form-group" action="booking_action.php" method="POST">

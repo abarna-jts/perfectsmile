@@ -82,6 +82,7 @@ color: green;
 <section class="book" id="book">
     <h1 class="heading"> <span>book</span> now </h1>
     <div class="row">
+        
         <form action="index.php" id="form-group" method="post">
             <h3 class="booking">Book Appointment</h3>
             <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
@@ -91,14 +92,15 @@ color: green;
             <input type="submit" placeholder="book now" class="btn">
         </form>
         <div class="content">
-            <p>Ready to schedule your next dental appointment? Look no further! Booking with us is as easy as saying 'cheese' for a smile.</p>
-            <div class="box">
+            
+            <div class="box"style="margin-left:15%;">
                 <h3>Contact Us</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India - 600075 </a>
                 <a href="tel:7305686253"> <i class="fas fa-phone"></i> 7305686253 </a>
                 <a href="tel:9840734794"> <i class="fas fa-phone"></i> 9840734794 </a>
                 <a href="mailto:jdcare1997@gmail.com"> <i class="fas fa-envelope"></i> jdcare1997@gmail.com </a>
-                <a href="mailto:perfectsmile1029@gmail.com"> <i class="fas fa-envelope"></i> perfectsmile1029@gmail.com </a> 
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India - 600075 </a>    
+            <a href="mailto:perfectsmile1029@gmail.com"> <i class="fas fa-envelope"></i> perfectsmile1029@gmail.com </a>
+            
             </div>
         </div>
     </div>
@@ -146,7 +148,8 @@ color: green;
             <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i> Twitter </a>
             <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> Instagram </a>
             <a href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a> 
-            <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i> Pinterest </a>                               
+            <a href="https://www.pinterest.com"> <i class="fa-brands fa-pinterest-p"></i> Pinterest </a>  
+                                         
         </div>
     </div>
 

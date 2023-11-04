@@ -544,8 +544,7 @@ section:nth-child(even){
 }
 .row .box h3{
     font-size: 2.5rem;
-    text-decoration: underline;
-    text-decoration-color: #16a085;
+   
     text-decoration-skip: ink;
     color: var(--black);
     padding: 1rem 0;
